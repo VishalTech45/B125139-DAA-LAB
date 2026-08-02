@@ -1,15 +1,21 @@
 #include<stdio.h>
 void  Duplicates(int arr[] , int n){
-
-    for (int i = 0 ; i < n/2 ;i++){
+    int cnt = 0 ;
+    for (int i = 0 ; i <=n/2 ;i++){
         for(int j =i+1 ; j < n ; j++){
             if (arr[i]==arr[j]){
                 printf("We are getting Duplicate numbers %d\n",arr[i]);
+                cnt++;
                 break ;
             }
         }
 
     }
+
+    if(cnt==0){
+    printf(" Not Duplicate found ") ;
+    }
+  
 }
 
 
@@ -25,6 +31,7 @@ int main(){
     }
 
     Duplicates( arr, n) ;
+   
 
     return 0 ;
 
