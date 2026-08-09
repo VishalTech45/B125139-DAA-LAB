@@ -27,7 +27,7 @@ int main() {
     list[0].value = -logn;     // log2(1/n)
 
     // log2(n)
-    strcpy(list[1].name, "log2(n)");
+    strcpy(list[1].name, "log2(n)"); // Store the time complexity name and its corresponding function
     list[1].value = logn;
 
     // 12*sqrt(n)
